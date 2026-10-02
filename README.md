@@ -1,7 +1,7 @@
 
 # IBM HR Analytics: Employee Attrition & Retention Strategy
 
-A data-driven exploratory analysis identifying key drivers behind employee turnover within a 1,470-employee workforce, accompanied by strategic, executive-level HR recommendations.
+I built this project to analyze why employees leave a company and what HR can do to keep them. Using Microsoft excel, SQL and Python, I explored a dataset of 1,470 employees to find the biggest drivers of employee turnover and suggested simple, actionable solutions.
 
 ---
 
@@ -9,20 +9,17 @@ A data-driven exploratory analysis identifying key drivers behind employee turno
 
 Employee attrition directly impacts organizational stability, talent pipelines, and operating overhead. This project investigates key demographic, financial, and workplace factors driving employee turnover using exploratory data analysis in Python.
 
-### Key Findings
-* **Overall Attrition Rate:** The organization maintains a **16.1%** baseline attrition rate across 1,470 employees.
-* **Workload Drivers:** Employees working **OverTime** suffer an attrition rate exceeding **30%**, compared to ~10% for non-overtime staff.
-* **Role Vulnerability:** **Sales Representatives** experience the highest attrition by percentage (~39.8%), driven by competitive market pressure and early-tenure turnover.
-* **Compensation Gap:** Departing employees earn an average of **$4,800/month**, compared to **$6,800/month** for retained staff—a $2,000 monthly compensation deficit.
-* **Tenure Risk Window:** Attrition heavily peaks within **Year 1** of tenure (59 total departures) before dropping substantially after Year 5.
+### Key Findings.
+* **Overall Attrition:** About **16.1%** of total employees left the company.
+* **Overtime Impact:** Employees who work overtime leave at a much higher rate **(30.5%)** compared to those who don't **(10.4%)**.
+*  **Highest Risk Role:** **Sales Representatives** have the highest turnover rate at 39.8% , driven by competitive market pressure and early-tenure turnover.
 
 ---
-
 
 ### Analytical Workflow
 1. **Data Ingestion & Integrity Checks:** Standardized schema, handled missing records, and filtered relevant parameters.
 2. **Aggregation & Crosstabs:** Utilized `pd.crosstab()` and group summaries to analyze relative rates vs. absolute counts across roles and demographics.
-3. **Exploratory Data Analysis:** Built clean, communicative Matplotlib plots to surface proportions, continuous variable differences, and tenure trends.
+3. **Exploratory Data Analysis:** Built clean, communicative  plots to surface proportions, continuous variable differences, and tenure trends.
 
 ---
 
@@ -36,12 +33,12 @@ Employee attrition directly impacts organizational stability, talent pipelines, 
 
 ## Business Recommendations
 
-1. **Structured Early-Tenure Retention (0–1 Year):**
-   * Implement a formal 30-60-90 day onboarding framework with dedicated mentorship to catch early friction before Year 1 departures.
-2. **Workload Auditing & OverTime Caps:**
-   * Introduce workload auditing and enforce strict monthly overtime caps to mitigate acute burnout risks.
-3. **Sales Representative Compensation Overhaul:**
-   * Re-evaluate base salary and commission structures for Sales Representatives to align with market benchmarks, mitigating the high cost of replacing sales talent (~6 months onboarding overhead).
+  1.  **Improve Early Onboarding:**
+      Set up 30-60-90 day check-ins during the 3-month probation period to catch early dissatisfaction before new hires quit.
+  2.   **Control Overtime:**
+      Set strict monthly caps on overtime hours and audit heavy workloads to reduce employee burnout.
+  3.  **Review Sales Rep Pay:**
+     Sales Reps quit the most. Replacing them takes around 6 months of training and hurts client deals, so reviewing base pay and bonuses is essential.
 
 ---
 
